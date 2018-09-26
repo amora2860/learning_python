@@ -1,10 +1,12 @@
 
-
+#1.8 #1
 for n in [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0]:
 
        print(1/n)
+#-----------------------------------------------------------------------------------------------
+#1.8 #2
 
-# found this try and catch code which is nice to rude out bad inputs.
+# found this try and catch code which is nice to eliminate out bad inputs.
 while True:
     try:
         # Note: Python 2.x users should use raw_input, the equivalent of 3.x's input
@@ -33,3 +35,11 @@ while b > 0:
         break
     print(b)
 
+#-------------------------------------------------------------------------------
+
+#1.8 #3
+
+base = int(input("enter base"))
+exp = int(input("enter exponent"))
+
+print(base**exp)
