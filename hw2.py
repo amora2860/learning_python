@@ -1,7 +1,11 @@
 # Name: andrew m
 # hw2.py
 
+
+
 ##### Template for Homework 2, exercises 2.0 - 2.5  ######
+
+import math
 
 # **********  Exercise 2.0 ********** 
 
@@ -75,29 +79,61 @@ rsp("paper", "rock")
 
 # Define is_divisible function here
 ##### YOUR CODE HERE #####
+def is_divisible(m, n):
+
+    if m == 0 or n == 0:
+        print("cannot divide by 0")
+        return
+    elif m % n == 0:
+        print("True")
+        return
+    else:
+        print("False")
+        return
 
 # Test cases for is_divisible
 ## Provided for you... uncomment when you're done defining your function
 
-#print is_divisible(10, 5)  # This should return True
-#print is_divisible(18, 7)  # This should return False
-#print is_divisible(42, 0)  # What should this return?
+is_divisible(10, 5)
+    # This should return True
+is_divisible(18, 7)  # This should return False
+
+is_divisible(42, 0)  # What should this return?
 
 
 # Define not_equal function here
 ##### YOUR CODE HERE #####
 
+def not_equal(m, n):
+  if m > n:
+     print("true")
+
+  elif m < n:
+    print("true")
+
+  else:
+     print("false")
+
+
 # Test cases for not_equal
 ##### YOUR CODE HERE #####
+not_equal(5,4)
+not_equal(4,4)
+not_equal(3,5)
+
 
 # ********** Exercise 2.3 ********** 
 
 ## 1 - multadd function
 ##### YOUR CODE HERE #####
+radians = (90.0 / 360.0) * 2 * math.pi
+print(math.sin(radians))
+
 
 ## 2 - Equations
 ##### YOUR CODE HERE #####
 
+# this makes no sense!!!
 
 # Test Cases
 # angle_test =
