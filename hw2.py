@@ -5,7 +5,7 @@
 
 # **********  Exercise 2.0 ********** 
 
-x = input()
+x = input("please enter a number")
 
 def f1(x):
     print(x + 1)
@@ -19,53 +19,40 @@ print(f2(4))
 
 # Define your function here
 ##### YOUR CODE HERE #####
-p1 = "s"
 
-p2 = "s"
 
 def rsp(p1, p2):
 
  if p1 == p2:
    print("Tie")
- return
+   return
+ elif p1 == "rock" and p2 == "paper":
+    print("player 2 wins")
+    return
 
- #elif p1 == "rock" and p2 == "paper"):
-  #  print("passed 2")
- #return
+ elif p1 == "rock"and p2 == "scissor":
+    print("player 1 wins")
+    return
 
-  # elif RPS("rock", "scissor"):
-   # a = "player one wins"
-    #print("passed 2")
-    #return a
+ elif p1 == "scissor" and p2 == "paper":
+    print("player one wins")
+    return
 
-    #elif RPS("scissor", "scissor"):
-     #  a = "tie"
-    #   print("passed 3")
-   #     return a
+ elif p1 == "scissor" and p2 == "rock":
+    print("player two wins")
+    return
 
- #elif RPS("scissor", "paper"):
-    #a = "player one wins"
-   # print("passed 3")
-  #  return a
 
- #elif RPS("scissor", "rock"):
-  #  a= "player two wins"
-  #  return a
+ elif p1 == "paper" and p2 == "scissor":
+    print("player two wins")
+    return
 
- #elif RPS("paper", "paper"):
- #   a ="tie"
- #   return a
-
- #elif RPS("paper", "scissor"):
-   # a = "player two wins"
-  #  return a
-
- #elif RPS("paper", "rock"):
-   # a = "player two wins"
-  #  return a
- #else:
-#        print("why would you test for that?")
-  #      return
+ elif p1 == "paper" and p2 == "rock":
+    print("player one wins")
+    return
+ else:
+  print("why would you test for that?")
+  return
 
 
 
@@ -73,15 +60,15 @@ def rsp(p1, p2):
 ##### YOUR CODE HERE #####
 
 # 1 test
-rsp("rock", "rock")
+rsp("rock", "paper")
 
 
 # 2 test
-#RPS("paper", "paper")
+rsp("paper", "paper")
 
 
 # 3 test
-#RPS("paper", "rock")
+rsp("paper", "rock")
 
 
 # ********** Exercise 2.2 ********** 
