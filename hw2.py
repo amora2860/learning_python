@@ -1,24 +1,88 @@
-# Name:
-# Section:
+# Name: andrew m
 # hw2.py
 
 ##### Template for Homework 2, exercises 2.0 - 2.5  ######
 
 # **********  Exercise 2.0 ********** 
 
+x = input()
+
 def f1(x):
-    print x + 1
+    print(x + 1)
 
 def f2(x):
-    return x + 1
+    return(x + 1)
 
+print(f1(4))
+print(f2(4))
 # **********  Exercise 2.1 ********** 
 
 # Define your function here
 ##### YOUR CODE HERE #####
+p1 = "s"
+
+p2 = "s"
+
+def rsp(p1, p2):
+
+ if p1 == p2:
+   print("Tie")
+ return
+
+ #elif p1 == "rock" and p2 == "paper"):
+  #  print("passed 2")
+ #return
+
+  # elif RPS("rock", "scissor"):
+   # a = "player one wins"
+    #print("passed 2")
+    #return a
+
+    #elif RPS("scissor", "scissor"):
+     #  a = "tie"
+    #   print("passed 3")
+   #     return a
+
+ #elif RPS("scissor", "paper"):
+    #a = "player one wins"
+   # print("passed 3")
+  #  return a
+
+ #elif RPS("scissor", "rock"):
+  #  a= "player two wins"
+  #  return a
+
+ #elif RPS("paper", "paper"):
+ #   a ="tie"
+ #   return a
+
+ #elif RPS("paper", "scissor"):
+   # a = "player two wins"
+  #  return a
+
+ #elif RPS("paper", "rock"):
+   # a = "player two wins"
+  #  return a
+ #else:
+#        print("why would you test for that?")
+  #      return
+
+
 
 # Test Cases for Exercise 2.1
 ##### YOUR CODE HERE #####
+
+# 1 test
+rsp("rock", "rock")
+
+
+# 2 test
+#RPS("paper", "paper")
+
+
+# 3 test
+#RPS("paper", "rock")
+
 
 # ********** Exercise 2.2 ********** 
 
