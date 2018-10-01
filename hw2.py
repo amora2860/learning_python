@@ -6,6 +6,7 @@
 ##### Template for Homework 2, exercises 2.0 - 2.5  ######
 
 import math
+import random
 
 # **********  Exercise 2.0 ********** 
 
@@ -123,7 +124,7 @@ not_equal(3,5)
 
 
 # ********** Exercise 2.3 ********** 
-
+print("excercise 2.3")
 ## 1 - multadd function
 ##### YOUR CODE HERE #####
 radians = (90.0 / 360.0) * 2 * math.pi
@@ -156,6 +157,35 @@ print(math.sin(radians))
 
 ## 1 - rand_divis_3 function
 ##### YOUR CODE HERE #####
+print("Excercise 2.4 random number")
+
+print("#1")
+def rand_divis_3():
+   a = random.randint(0, 100)
+   print(a)
+   if (a % 3) == 0:
+       print("True")
+       return
+   else:
+       print("False")
+       return
+
+rand_divis_3()
+
+print("#2")
+b = int(input("How many sides to this dice?"))
+c = int(input("How many times do you want to roll?"))
+
+def roll_dice(b, c):
+
+  for i in range(c):
+     a = random.randint(1,b)
+     print(a)
+     c = c - 1
+  return
+
+roll_dice(b, c)
+print("thats all!")
 
 # Test Cases
 ##### YOUR CODE HERE #####
