@@ -6,6 +6,7 @@
 ##### Template for Homework 2, exercises 2.0 - 2.5  ######
 
 import math
+import cmath
 import random
 
 # **********  Exercise 2.0 ********** 
@@ -187,21 +188,27 @@ def roll_dice(b, c):
 roll_dice(b, c)
 print("thats all!")
 
-# Test Cases
-##### YOUR CODE HERE #####
 
-## 2 - roll_dice function - remember that a die's lowest number is 1;
-                            #its highest is the number of sides it has
-##### YOUR CODE HERE #####
-
-# Test Cases
-##### YOUR CODE HERE #####                            
 
 
 # ********** Exercise 2.5 **********
-
+print("Exercise 2.5 start")
 # code for roots function
 ##### YOUR CODE HERE #####   
 
+def roots(a,b,c):
+    # calculate the discriminant
+    d = (b ** 2) - (4 * a * c)
+
+    # find two solutions
+    sol1 = (-b - cmath.sqrt(d)) / (2 * a)
+    sol2 = (-b + cmath.sqrt(d)) / (2 * a)
+    print('The solution are {0} and {1}'.format(sol1, sol2))
+
+
+a = float(input("Enter a "))
+b = float(input("Enter b "))
+c = float(input("Enter c "))
+roots(a,b,c)
 # Test Cases
 ##### YOUR CODE HERE #####   

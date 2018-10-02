@@ -10,6 +10,31 @@ def play_nims(pile, max_stones):
     '''
 
     ## Basic structure of program (feel free to alter as you please):
+flag = False
+
+while flag != True:
+
+ try:
+  pile = int(input("How large of a pile of stones do you want?"))
+  flag = True
+ except ValueError:
+   print("That's not a number")
+
+flag = False
+
+while flag != True:
+
+ try:
+  max_stones = int(input("How many stones do you want to pull 1-5?"))
+
+  if max_stones == 1 or 2 or 3 or 4 or 5:
+    flag = True
+   else:
+      print("That is not a number between 1-5")
+ except ValueError:
+   print("That's not a number")
+
+
 
 #    while [pile is not empty]:
 #        while [player 1's answer is not valid]:
