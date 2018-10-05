@@ -1,14 +1,36 @@
 # Name: Andrew M.
 # Section:
 # nims.py
+
+flag = False #this flag is used to keep track of correct responses
+pile = 0
+'''
+while flag != True : #Ensures that the loop is not exited until everything is satifies.
+ while pile < 1:
+  try:
+    pile = int(input("How large of a pile of stones do you want?"))
+    flag = True
+  except ValueError:
+    print("That's not a number")
+
+flag = False #this ensures that the loop to ask player one for how many stones is entered.
+'''
+def ask_pile():
+  try:
+    pile = int(input("How large of a pile of stones do you want?"))
+    if pile < 1:
+     return pile
+  except ValueError:
+    print("That's not a number")
+
+ask_pile()
+
 def stones(flag, player,pile):
- while flag != True: #player ones turn starts
-  print(flag, player,pile)
+ while flag != True: #players turn starts
   try:
    if pile > 0: # this is in case there is no pile left when the choice gets to player one
-    max_stones = int(input("How many stones do you want to pull"))
+    max_stones = int(input("How many stones do you want to pull" + player + "1-5"))
     pile = pile - max_stones
-    winner = player
     if pile <= 0:
      print("There are no rocks left")
     else:
@@ -19,27 +41,19 @@ def stones(flag, player,pile):
      print("That is not a number between 1-5")
   except ValueError:
     print("That's not a number")
- return flag, winner, pile, max_stones
+ print(str(pile) + "in loop")
+ return pile
 
-flag = False #this flag is used to keep track of correct responses
-pile = 0
 
-while flag != True : #Ensures that the loop is not exited until everything is satifies.
- while pile < 1:
-  try:
-    pile = int(input("How large of a pile of stones do you want?"))
-    flag = True
-  except ValueError:
-    print("That's not a number")
-
-flag = False #this ensures that the loop to ask player one for how many stones is entered.
 
 
 while pile > 0: #loop that will run until the pile of rocks goes to zero
  flag = False
- player_one = "player one"
- stones(flag,player_one,pile)
-
+ player = "player one"
+ stones(flag,player,pile)
+ player = "player two"
+ print(pile)
+ stones(flag,player,pile)
  # player ones turn starts
  '''while flag != True: 
   try:
@@ -79,4 +93,4 @@ while pile > 0: #loop that will run until the pile of rocks goes to zero
    print("That's not a number") 
 '''
 
-print("Game over the winner is ", winner)
+print("Game over the winner is ", player)
