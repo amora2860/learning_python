@@ -2,8 +2,8 @@
 # Section:
 # nims.py
 
-flag = False #this flag is used to keep track of correct responses
-pile = 0
+
+
 '''
 while flag != True : #Ensures that the loop is not exited until everything is satifies.
  while pile < 1:
@@ -23,7 +23,7 @@ def ask_pile():
   except ValueError:
     print("That's not a number")
 
-ask_pile()
+
 
 def stones(flag, player,pile):
  while flag != True: #players turn starts
@@ -37,25 +37,32 @@ def stones(flag, player,pile):
      print("There are", pile, "rocks left.")
    if max_stones == 1 or 2 or 3 or 4 or 5:
     flag = True
+    return
    else:
      print("That is not a number between 1-5")
   except ValueError:
     print("That's not a number")
  print(str(pile) + "in loop")
- return pile
+ return
+
+def stones_game():
+ flag = False  # this flag is used to keep track of correct responses
+ pile = 0
+ ask_pile()
+ while pile > 0: #loop that will run until the pile of rocks goes to zero
+  flag = False
+  player = "player one"
+  stones(flag,player,pile)
+  player = "player two"
+  print(pile)
+  stones(flag,player,pile)
+ return
+
+stones_game()
 
 
-
-
-while pile > 0: #loop that will run until the pile of rocks goes to zero
- flag = False
- player = "player one"
- stones(flag,player,pile)
- player = "player two"
- print(pile)
- stones(flag,player,pile)
  # player ones turn starts
- '''while flag != True: 
+'''while flag != True: 
   try:
    if pile > 0: # this is in case there is no pile left when the choice gets to player one
     max_stones = int(input("How many stones do you want to pull Player one 1-5?"))
@@ -93,4 +100,4 @@ while pile > 0: #loop that will run until the pile of rocks goes to zero
    print("That's not a number") 
 '''
 
-print("Game over the winner is ", player)
+print("Game over the winner is ")
