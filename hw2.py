@@ -1,4 +1,4 @@
-# Name: andrew m
+# Name: andrew
 # hw2.py
 
 

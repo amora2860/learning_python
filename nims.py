@@ -1,4 +1,4 @@
-# Name: Andrew M.
+# Name: Andrew
 # Section:
 # nims.py
 

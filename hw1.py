@@ -1,4 +1,4 @@
- # Name: Andrew Mora
+ # Name: Andrew
 # Section:
 # Date: 9/19/2018
 # hw1.py
