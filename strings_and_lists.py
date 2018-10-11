@@ -13,26 +13,49 @@ def sum_all(number_list):
     return total
 
 # Test cases
-print "sum_all of [4, 3, 6] is:", sum_all([4, 3, 6])
-print "sum_all of [1, 2, 3, 4] is:", sum_all([1, 2, 3, 4])
+print("sum_all of [4, 3, 6] is:", sum_all([4, 3, 6]))
+print("sum_all of [1, 2, 3, 4] is:", sum_all([1, 2, 3, 4]))
 
 
 def cumulative_sum(number_list):
     # number_list is a list of numbers
+    cumul_total = []
+    flag = True # Ensures that the first value is entered unchanged into the list.
+    for i in number_list:
 
-    ##### YOUR CODE HERE #####
-    return "Not Implemented Yet"
+     if flag == True:
+       # dont add 4 to its self
+      print(i)
+      cumul_total.append(i)
+      flag = False #makes sure we do not enter this again
+      n = i
+     else:
 
+      n += i # add the previous number in the list to the next number
+      print(n)
+      cumul_total.append(n)
+      n = i
+    return cumul_total
 
-# Test Cases
-##### YOUR CODE HERE #####
+print("The cumulative sum of [4, 3, 6] is:", cumulative_sum([4, 3, 6]))
+
 
 # **********  Exercise 2.8 **********
 
 def report_card():
-    ##### YOUR CODE HERE #####
-    
 
+#ask for class name and the gpa
+#ask if there are more classes to enter and to enter y or n
+# list one has names of the classes
+class_list[]
+# list two has the GPA's
+gpa_list[]
+#take the total of the GPA list and divide by the total number of items in either list
+len(gpa_list)
+
+
+    
+#
 # Test Cases
 ## In comments, show the output of one run of your function.
 
@@ -40,13 +63,13 @@ def report_card():
 
 # Write any helper functions you need here.
 
-VOWELS = ['a', 'e', 'i', 'o', 'u']
+#VOWELS = ['a', 'e', 'i', 'o', 'u']
 
-def pig_latin(word):
+#def pig_latin(word):
     # word is a string to convert to pig-latin
 
     ##### YOUR CODE HERE #####
-    return "Not Implemented Yet"    
+    #return "Not Implemented Yet"
 
 # Test Cases
 ##### YOUR CODE HERE #####
