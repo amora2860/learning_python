@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ce86bf0-bd4c-4c21-965a-39ce7ad9c057" name="Default Changelist" comment="Finished exercise 2.7 now onto 2.8.">
-      <change beforePath="$PROJECT_DIR$/hangman_lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/hangman_lib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman_lib_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/hangman_lib_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strings_and_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/strings_and_lists.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ce86bf0-bd4c-4c21-965a-39ce7ad9c057" name="Default Changelist" comment="Finished exercise 2.7 now onto 2.8." />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
