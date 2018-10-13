@@ -38,21 +38,43 @@ def cumulative_sum(number_list):
     return cumul_total
 
 print("The cumulative sum of [4, 3, 6] is:", cumulative_sum([4, 3, 6]))
-
+print("This is the end of Exercise 2.7")
 
 # **********  Exercise 2.8 **********
 
 def report_card():
 
 #ask for class name and the gpa
-#ask if there are more classes to enter and to enter y or n
-# list one has names of the classes
-class_list[]
-# list two has the GPA's
-gpa_list[]
-#take the total of the GPA list and divide by the total number of items in either list
-len(gpa_list)
+ done = "no"
+ gpa = []
+ class_list = []
+ try:
+  while done != "yes":
+   gpas = int(input("what was your GPA?"))
+   gpa.append(gpas)
+   classes = str(input("what is the class name?")) # list one has names of the classes
+   class_list.append(classes)
+   response = str(input("Are you done? yes or no"))    #ask if there are more classes to enter and to enter y or n
+   if response == "yes":
+       done = "yes"
+ except ValueError:
+     print("That's not a number")
 
+ print(gpa)
+ print(class_list)
+ for i in range(len(gpa)):
+   print(str(gpa[i]) + " - " + str(class_list[i]))
+ print("Overall GPA   " +  str(sum(gpa)/len(gpa)))
+
+
+
+
+
+#take the total of the GPA list and divide by the total number of items in either list
+#x = len(gpa)
+#print(sum of gpa() / x)
+
+report_card()
 
     
 #
