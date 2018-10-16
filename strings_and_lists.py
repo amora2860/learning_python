@@ -13,8 +13,8 @@ def sum_all(number_list):
     return total
 
 # Test cases
-print("sum_all of [4, 3, 6] is:", sum_all([4, 3, 6]))
-print("sum_all of [1, 2, 3, 4] is:", sum_all([1, 2, 3, 4]))
+#print("sum_all of [4, 3, 6] is:", sum_all([4, 3, 6]))
+#print("sum_all of [1, 2, 3, 4] is:", sum_all([1, 2, 3, 4]))
 
 
 def cumulative_sum(number_list):
@@ -37,8 +37,8 @@ def cumulative_sum(number_list):
       n = i
     return cumul_total
 
-print("The cumulative sum of [4, 3, 6] is:", cumulative_sum([4, 3, 6]))
-print("This is the end of Exercise 2.7")
+#print("The cumulative sum of [4, 3, 6] is:", cumulative_sum([4, 3, 6]))
+#print("This is the end of Exercise 2.7")
 
 # **********  Exercise 2.8 **********
 
@@ -63,7 +63,7 @@ def report_card():
  print(gpa)
  print(class_list)
  for i in range(len(gpa)):
-   print(str(gpa[i]) + " - " + str(class_list[i]))
+  print(str(gpa[i]) + " - " + str(class_list[i]))
  print("Overall GPA   " +  str(sum(gpa)/len(gpa)))
 
 
@@ -74,7 +74,7 @@ def report_card():
 #x = len(gpa)
 #print(sum of gpa() / x)
 
-report_card()
+#report_card()
 
     
 #
@@ -83,23 +83,38 @@ report_card()
 
 # **********  Exercise 2.9 **********
 
+
+
+
+
 # Write any helper functions you need here.
 
-#VOWELS = ['a', 'e', 'i', 'o', 'u']
+VOWELS = ['a', 'e', 'i', 'o', 'u']
 
-#def pig_latin(word):
+def pig_latin(word):
+    list = []
+    a = word
+    list = a
     # word is a string to convert to pig-latin
+    list2 = list[0] # this grabs just the first letter of the word.
+    list3 = list[1:]#this will grab everything but the first letter of the word.
 
-    ##### YOUR CODE HERE #####
-    #return "Not Implemented Yet"
+    for i in VOWELS:
+     if list2 == i:
+      list = list + "hay"
+      print(list)
+      return
+    list4 = list3 + list2 + "ay"
+    print(list4)
+    return "Not Implemented Yet"
 
-# Test Cases
-##### YOUR CODE HERE #####
-
+pig_latin("pig")
+pig_latin("are")
 
 # **********  Exercise 2.10 **********
 # Test Cases
 ##### YOUR CODE HERE #####
+
 
 
 # **********  Exercise OPT.1 **********
