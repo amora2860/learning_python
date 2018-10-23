@@ -112,10 +112,23 @@ pig_latin("pig")
 pig_latin("are")
 
 # **********  Exercise 2.10 **********
-# Test Cases
-##### YOUR CODE HERE #####
 
+#1
+#Print out a list that is cubed using list comprehesion
+list = [1 ,2, 3, 4, 5, 6, 7, 8, 9, 10]
+cubed_ints = [ e**3 for e in list]
+print(cubed_ints)
+#2
+#skipping lame
+#3
+list2 = input("type in a word")
+vowels = "aeiou"
+vowels_in_word = [i for i in list2 if i in vowels]
+print(len(list2))
+print(vowels_in_word)
 
-
-# **********  Exercise OPT.1 **********
-# If you do any work for this problem, submit it here 
+#4
+listx = [10,20,30]
+listy = [1,2,3]
+listxy = [x+y for x in listx for y in listy]
+print(listxy)

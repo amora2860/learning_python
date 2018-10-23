@@ -4,9 +4,8 @@
 # hangman_template.py
 
 # Import statements: DO NOT delete these! DO NOT write code above this!
-from random import randrange
-from string import *
-
+import hangman_lib
+import random
 # -----------------------------------
 # Helper code
 # (you don't need to understand this helper code)
@@ -21,15 +20,15 @@ def load_words():
     Depending on the size of the word list, this function may
     take a while to finish.
     """
-    print "Loading word list from file..."
+    print("Loading word list from file...")
     # inFile: file
     inFile = open(WORDLIST_FILENAME, 'r', 0)
     # line: string
     line = inFile.readline()
     # wordlist: list of strings
     wordlist = split(line)
-    print "  ", len(wordlist), "words loaded."
-    print 'Enter play_hangman() to play a game of hangman!'
+    print("  ", len(wordlist), "words loaded.")
+    print('Enter play_hangman() to play a game of hangman!')
     return wordlist
 
 # actually load the dictionary of words and point to it with 
@@ -46,7 +45,7 @@ def get_word():
     """
     Returns a random word from the word list
     """
-    word=words_dict[randrange(0,len(words_dict))]
+    word = words_dict[random.randrange(0,len(words_dict))]
     return word
 
 # end of helper code
@@ -98,4 +97,6 @@ def play_hangman():
     ####### YOUR CODE HERE ######
     return None
 
-    
+print(get_word())
+
+
