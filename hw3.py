@@ -1,4 +1,4 @@
-# Name:
+# Name: Andrew M.
 # Section:
 # hw3.py
 
@@ -6,8 +6,16 @@
 
 # **********  Exercise 3.1 ********** 
 
+
 # Define your function here
-##### YOUR CODE HERE #####
+def list_intersection(a,b):
+ c = set(a) & set(b)
+
+ return c
+
+print(list_intersection([1,2,3,4,6,2,3], [3,1,5,8,6,7,5,3,2]))
+
+
 
 # Test Cases for Exercise 3.1
 ##### YOUR CODE HERE #####
@@ -78,5 +86,5 @@ def zellers(month, day, year):
     return "Not Yet Implemented"
 
 # Test Cases for Exercise 3.5
-print zellers("March", 10, 1940) == "Sunday" # This should be True
+#print zellers("March", 10, 1940) == "Sunday" # This should be True
 ##### YOUR CODE HERE #####
